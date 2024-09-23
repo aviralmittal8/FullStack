@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Responsive Form</title>
+    <link rel="stylesheet" type="text/css" href="https://demo.plantpot.works/assets/css/normalize.css">
+    <link rel="stylesheet" href="https://use.typekit.net/opg3wle.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <div id="container">
+        <div class="form-box">
+            <form class="c-form" name="c-form">
+                <div class="two-columns">
+                    <fieldset>
+                        <label class="c-form-label" for="First-name">First name<span class="c-form-required">
+                                *</span></label>
+                        <input id="first-name" class="c-form-input" type="text" name="your-First-name"
+                            placeholder="Your first name">
+                    </fieldset>
+
+                    <fieldset>
+                        <label class="c-form-label" for="Last-name">Last name<span class="c-form-required">
+                                *</span></label>
+                        <input id="last-name" class="c-form-input" type="text" name="your-last-name"
+                            placeholder="Your last name">
+                    </fieldset>
+                </div>
+
+                <fieldset>
+                    <label class="c-form-label" for="Phone-Number">Phone Number<span class="c-form-required">
+                            *</span></label>
+                    <input id="Phone-Number" class="c-form-input" type="text" name="your-Phone-Number"
+                        placeholder="Enter phone number">
+                </fieldset>
+
+                <fieldset>
+                    <label class="c-form-label" for="email">Email address<span class="c-form-required"> *</span></label>
+                    <input id="email" class="c-form-input" type="email" name="your-email"
+                        placeholder="Email@example.com">
+                </fieldset>
+
+                <fieldset>
+                    <label class="c-form-label" for="password">Password<span class="c-form-required">*</span></label>
+                    <input id="password" class="c-form-input" type="password" name="your-password"
+                        placeholder="********">
+                </fieldset>
+
+                <fieldset>
+                    <label class="c-form-label" for="comments">Comments<span class="c-form-required"> *</span></label>
+                    <textarea id="comments" class="c-form-input" name="your-comments"
+                        placeholder="Enter comments"></textarea>
+                </fieldset>
+
+                    <p><input type="checkbox" class="c-form-label" required name="terms"> I accept the <u>Terms and Conditions</u><span class="c-form-required"> *</span></p>
+                    <button class="c-form-btn" type="button" onclick="check()">SUBMIT</button>
+            
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

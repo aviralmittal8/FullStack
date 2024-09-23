@@ -1,0 +1,118 @@
+@charset "utf-8"; /* Only one charset declaration is needed */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html {
+  font-size: 16px;
+}
+body {
+  background-color: rgb(245, 224, 142); /* Default background color */
+  font-family: futura-pt, sans-serif;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  animation: changeBgColor 5s infinite;
+}
+@keyframes changeBgColor {
+  0% { background-color: rgb(245, 224, 142); }
+  50% { background-color: rgb(51, 58, 65); } 
+  100% { background-color: rgb(245, 224, 142); } 
+}
+
+#container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  min-height: 600px;
+  padding: 20px;
+}
+.form-box {
+  width: 100%;
+  max-width: 400px;
+  padding: 30px 15px;
+  border-radius: 4px;
+  background-color: white;
+  border: 2px solid black;
+  opacity: 0.8;
+}
+.c-form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.c-form-label {
+  display: inline-block;
+  margin: 0.5rem 0;
+  color: #3d3935;
+  letter-spacing: 0.2px;
+  font-size: 1rem;
+}
+.c-form-input {
+  width: 100%;
+  padding: 15px 10px;
+  border: 1px solid #3d3935;
+  border-radius: 4px;
+  background-color: #fff;
+  color: #3d3935;
+  outline: 0;
+}
+.c-form-input::placeholder {
+  color: #867d6c;
+  font-size: 1rem;
+}
+.c-form-required {
+  color: #b0092d;
+}
+textarea.c-form-input {
+  width: 100%;
+  min-height: 10ch;
+  max-height: 120ch;
+  padding: 10px;
+  resize: none;
+}
+.two-columns {
+  display: grid;
+  grid-template-columns: 100%;
+}
+fieldset {
+  margin: 0.4rem 0;
+  padding: 0;
+  border: none;
+}
+.c-form-btn {
+  width: 100%;
+  margin-top: 10px;
+  padding: 15px;
+  border: 2px solid black;
+  border-radius: 4px;
+  background-color: rgb(51, 58, 65);
+  color: #fff;
+  font-size: 1.125rem;
+  letter-spacing: 2px;
+  text-align: center;
+  outline: none;
+  cursor: pointer;
+}
+
+/* Apply styles for screen widths between 481px and 600px */
+@media screen and (min-width: 481px) and (max-width: 600px) {
+  .two-columns {
+    grid-template-columns: 48.7804878% 48.7804878%;
+    grid-column-gap: 2.43902439%;
+  }
+  body {
+    background: linear-gradient(to right, #6e1e0b, #feb47b); /* Corrected gradient */
+  }
+}
+
+
+/* Apply styles for screens wider than 600px */
+@media screen and (min-width: 601px) {
+  .two-columns {
+    grid-template-columns: 48.7804878% 48.7804878%;
+    grid-column-gap: 2.43902439%;
+  }
+}
