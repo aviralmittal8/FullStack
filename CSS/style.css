@@ -1,0 +1,23 @@
+body {
+    background-color: aqua;
+}
+
+.Child1 {
+    background-color: rgb(224, 197, 128);
+    border: 3px dashed black;
+    padding: 10px;
+    height: 100px;
+    width: 100px;
+    margin: auto;
+}
+
+.Container {
+    background-color: #fff;
+    padding: 10px;
+    border: 2px solid black;
+    height: 300px;
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+}
