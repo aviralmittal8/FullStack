@@ -1,0 +1,25 @@
+.parent {
+    text-align: center;
+    background-color: antiquewhite;
+    padding: 20px;
+}
+
+#disp {
+    text-align: center;
+    margin-top: 20px;
+    padding: 10px;
+    background-color: purple;
+}
+
+#output {
+    display: inline-flex;
+    flex-wrap: wrap; 
+    justify-content: center; 
+    margin-top: 10px;
+}
+
+.output-container {
+    display: inline-flex;
+    align-items: center;
+    margin-right: 20px; 
+}
