@@ -1,1 +1,6 @@
-{"name":"amit","email":"amit@gmail.com","password":123456}
+[
+  {
+    "email": "sds@abes.ac.in",
+    "password": "1234"
+  }
+]
