@@ -1,13 +1,27 @@
-const http = require('http');
-const PORT = 2527;
+const http = require("http");
+
+const PORT = 8080;
 const server = http.createServer((req, res) => {
-    console.log("Inside the server")
-    res.setHeader('content-type', "text/html");
-    res.write("<h2 style ='color:cyan; background-color:yellow'> Welcome to Node Server </h2>");
-    res.end("<h2> Server has ended </h2>");
+  if (req.url === "/" && req.method === "GET") {
+    res.setHeader("Content-Type", "text/html");
+    console.log(req.url + " " + req.method);
+    res.write("<h1 style='color:blue;background-color:yellow'>Hello</h1>");
+    res.end();
+  }
+  if (req.url === "/show" && req.method === "GET") {
+    res.end(
+      JSON.stringify({
+        message: "Successfully hit the api",
+      })
+    );
+  }
+  if (req.url === "/show" && req.method === "POST") {
+    res.end(
+      JSON.stringify({
+        message: "Successfully hit the post api @ /show",
+      })
+    );
+  }
+});
 
-})
-
-server.listen(PORT, () => {
-    console.log("Server is running on:" + PORT);
-})
+server.listen(PORT, () => console.log(`Server listen at ${PORT}`));
