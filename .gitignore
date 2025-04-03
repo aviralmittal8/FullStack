@@ -1,2 +1,4 @@
 .\Backend\httpModule\node_modules
 /Backend/httpModule/node_modules
+/Backend/httpModule/NodeRegistration/node_modules
+.\Backend\httpModule\NodeRegistration\node_modules

@@ -1,6 +1,26 @@
 [
   {
+    "name": "xyz",
+    "email": "xyz@gmail.com",
+    "password": 123456
+  },
+  {
+    "name": "pqr",
+    "email": "pqr@gmail.com",
+    "password": 123456
+  },
+  {
+    "name": "abc",
+    "email": "abc@gmail.com",
+    "password": "1234"
+  },
+  {
     "email": "sds@abes.ac.in",
     "password": "1234"
+  },
+  {
+    "name": "Aviral Mittal",
+    "email": "aviralmittal08@gmail.com",
+    "password": "123456"
   }
 ]
